@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="build/bundle.js"></script>
+    </head>
+    <body>
+        <div ng-controller="someController1"></div>
+        <div ng-controller="someController2"></div>
+        <div ng-controller="someController3" class="notify">
+            <input ng-init="message='test'" ng-model="message" >
+            <button ng-click="callNotify(message);">NOTIFY</button>
+            <p>(you have to click 3 times to see an alert)</p>
+        </div>
+    </body>
+</html>
