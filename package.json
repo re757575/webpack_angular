@@ -2,16 +2,18 @@
   "name": "webpack_angular",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/webpack ./src/main.js ./build/bundle.js"
+    "start": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
   },
-  "author": "",
+  "author": "Alex.Dai",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.23.1",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.13"
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
   }
 }

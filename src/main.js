@@ -6,4 +6,4 @@ require('./controllers/someController3.js');
 require('./service/notifyService.js');
 
 // load css
-require('style!css!../assets/main.css');
+require('../assets/main.css');
